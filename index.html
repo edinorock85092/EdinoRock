@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Единорок — одежда с характером</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header" data-header></header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Единорок / магазин</p>
+        <h1>Одежда с характером</h1>
+        <p>Для тех, кто не подстраивается. Футболки, худи и куртки — на сцене и за её пределами.</p>
+        <a class="btn btn--primary" href="catalog.html">В каталог</a>
+      </div>
+      <div class="hero__media">
+        <img src="assets/img/hero-look.jpg" alt="Образ Единорок">
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">На нашей частоте</p>
+          <h2>Выбирай свой ритм</h2>
+        </div>
+        <a href="catalog.html">Весь каталог ↗</a>
+      </div>
+      <div class="cats">
+        <a class="cat" href="catalog.html?cat=tees" style="--img:url('../assets/img/tee-no-heroes.jpg')">
+          <span>01</span><h3>Футболки</h3>
+        </a>
+        <a class="cat" href="catalog.html?cat=hoodies" style="--img:url('../assets/img/hoodie-svoboda.jpg')">
+          <span>02</span><h3>Худи</h3>
+        </a>
+        <a class="cat" href="catalog.html?cat=longsleeves" style="--img:url('../assets/img/longsleeve-ritm.jpg')">
+          <span>03</span><h3>Лонгсливы</h3>
+        </a>
+        <a class="cat" href="catalog.html?cat=jackets" style="--img:url('../assets/img/jacket-midnight.jpg')">
+          <span>04</span><h3>Куртки</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section__head">
+        <h2>Весь каталог</h2>
+        <a href="catalog.html">Смотреть все ↗</a>
+      </div>
+      <div class="grid" data-featured></div>
+    </section>
+
+    <section class="manifest">
+      <img src="assets/img/about-band.jpg" alt="Единорок">
+      <div class="manifest__copy">
+        <p class="eyebrow">Независимый характер</p>
+        <h2>Одежда в твоём ритме</h2>
+        <p>Рок — не только то, что звучит в наушниках. Мы делаем вещи, в которых чувствуешь себя собой: на репетиции, в зале и после полуночи.</p>
+        <a class="btn btn--primary" href="about.html">О нас</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

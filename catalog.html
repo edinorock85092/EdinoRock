@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог — Единорок</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="catalog">
+  <header class="site-header" data-header></header>
+  <main class="wrap">
+    <nav class="crumbs"><a href="index.html">Главная</a><span>/</span><span>Каталог</span></nav>
+    <section class="page-hero">
+      <p class="eyebrow">Единорок</p>
+      <h1>Каталог</h1>
+    </section>
+    <div class="toolbar">
+      <p data-shown></p>
+      <label>
+        <select data-sort>
+          <option value="popular">По популярности</option>
+          <option value="price-asc">Сначала дешевле</option>
+          <option value="price-desc">Сначала дороже</option>
+        </select>
+      </label>
+    </div>
+    <div class="filters" data-filters></div>
+    <section class="section" style="padding-top:28px">
+      <div class="grid" data-catalog></div>
+    </section>
+  </main>
+  <footer class="site-footer" data-footer></footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

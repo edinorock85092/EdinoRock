@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Единорок</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacts">
+  <header class="site-header" data-header></header>
+  <main class="wrap">
+    <nav class="crumbs"><a href="index.html">Главная</a><span>/</span><span>Контакты</span></nav>
+    <section class="page-hero">
+      <p class="eyebrow">Связь</p>
+      <h1>Контакты</h1>
+      <p style="color:var(--muted);max-width:48ch;margin-top:12px">Про вопросы, заказы или съёмки — напиши нам. Ответим в течение одного рабочего дня.</p>
+    </section>
+
+    <section class="contact-grid">
+      <div>
+        <article class="contact-card">
+          <h2>Телефон</h2>
+          <a href="tel:+79990131313">+7 (999) 013-13-13</a>
+        </article>
+        <article class="contact-card">
+          <h2>Почта</h2>
+          <a href="mailto:hello@edinorok.ru">hello@edinorok.ru</a>
+          <p>Ответим в течение одного рабочего дня</p>
+        </article>
+        <article class="contact-card">
+          <h2>Адрес</h2>
+          <p>Москва, ул. Роковая, д. 13</p>
+          <p>Условный адрес шоурума · по записи</p>
+        </article>
+        <article class="contact-card">
+          <h2>Мы в соцсетях</h2>
+          <a href="https://vk.com" target="_blank" rel="noreferrer">ВКонтакте ↗</a>
+          <a href="https://t.me" target="_blank" rel="noreferrer">Telegram ↗</a>
+        </article>
+      </div>
+      <div>
+        <form data-contact-form>
+          <h2 style="font-size:40px;margin-bottom:8px">Напиши нам</h2>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" required placeholder="Как к тебе обращаться">
+          </div>
+          <div class="field">
+            <label for="email">Электронная почта</label>
+            <input id="email" name="email" type="email" required placeholder="name@mail.ru">
+          </div>
+          <div class="field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" required placeholder="Расскажи, чем можем помочь"></textarea>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="agree">
+            <span>Согласен на обработку персональных данных для ответа на обращение.</span>
+          </label>
+          <button class="btn btn--primary btn--full" type="submit">Отправить сообщение</button>
+        </form>
+        <div class="map" style="margin-top:12px">Здесь будет карта · условное местоположение</div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" data-footer></footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
